@@ -15,6 +15,16 @@ These are the main aspects I would aim for.
 ### Converting to topological graph
  * Skeletonize the mask
  * Convert to graph (smth like this https://github.com/Image-Py/sknw)
+### Segmenting the root
  * Find main root - not sure how (shortest path from top to bottom?, should include info from the raw/denoised image?)
  * Find auxiliary roots, deal with overlaps - no idea how
+
+### Random ideas
+Use some maximum detection which is aware of directionality - some thing like canny edge detector, but for maxima
+
+The leaves can be probably deleted manually, although and automated approach would be cool
+
+How to deal with crossing roots? Could some clever manipulation with gradients around the crossing reveal which bits are in the foreground/background?
+
+One possible constrain could be that roots can branch only once - the main root can branch to auxiliary roots, but the auxiliary roots cannot brach further
 
