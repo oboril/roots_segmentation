@@ -28,3 +28,5 @@ How to deal with crossing roots? Could some clever manipulation with gradients a
 
 One possible constrain could be that roots can branch only once - the main root can branch to auxiliary roots, but the auxiliary roots cannot brach further
 
+This link might be relevant: https://link.springer.com/chapter/10.1007/978-3-319-21963-9_2
+
